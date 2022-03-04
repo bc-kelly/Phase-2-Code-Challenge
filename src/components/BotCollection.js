@@ -1,7 +1,7 @@
 import React from "react";
 import BotCard from './BotCard'
 
-function BotCollection({onBots, onBotArmy, setOnBotArmy}) {
+function BotCollection({onBots, onBotArmy, setOnBotArmy, dischargeBot}) {
 
   const showBots = onBots.map((bot) => {
 
@@ -16,6 +16,7 @@ function BotCollection({onBots, onBotArmy, setOnBotArmy}) {
         key={bot.id}
         bot={bot}
         handleClick={handleClick}
+        dischargeBot={dischargeBot}
       />
     )
   })

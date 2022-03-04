@@ -12,7 +12,8 @@ const botTypeClasses = {
 function BotCard({ bot, handleClick, dischargeBot }) {
   const { id } = bot;
 
-  function handleRemoval() {
+  function handleRemoval(event) {
+    event.stopPropagation();
     dischargeBot(id)
   }
 

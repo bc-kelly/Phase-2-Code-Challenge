@@ -41,6 +41,7 @@ function BotsPage() {
         onBots={onBots}
         onBotArmy={onBotArmy}
         setOnBotArmy={setOnBotArmy}
+        dischargeBot={dischargeBot}
       />
     </div>
   )
